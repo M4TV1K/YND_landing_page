@@ -10,4 +10,4 @@ After what, you should go to the very bottom of all projects, and open the one c
 
 There you will be able to find model I created in order to store text using its instacnes and enties representing the text that I'm fetching from the client side using Js API called Fetch.
 
-Have a nice day :)
+Have a nice day and holidays :)
