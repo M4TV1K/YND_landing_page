@@ -4,8 +4,7 @@
 
 To log in on the website https://anyjsoncms.com, you shall use:
 
-login: test
-password: testtest
+login: test | password: testtest
 
 After what, you should go to the very bottom of all projects, and open the one called "YND"
 
