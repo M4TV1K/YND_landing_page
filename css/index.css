@@ -9,7 +9,7 @@
     src: url("../font/InformCTT/INF56.TTF");
 }
 
-#contentHolder, #formHolder {
+#formHolder, #thanksHolder {
     display: none;
 }
 
