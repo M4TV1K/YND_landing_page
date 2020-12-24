@@ -1,0 +1,1084 @@
+
+@font-face {
+    font-family: Heebo;
+    src: url("../font/Heebo/Heebo-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: PseudoJaakko;
+    src: url("../font/InformCTT/INF56.TTF");
+}
+
+#contentHolder, #formHolder {
+    display: none;
+}
+
+html, body {
+    margin: 0;
+    background: #1A1B1F;
+}
+
+body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+p, h1, h2, a, button, li, input, label {
+    font-family: Heebo, sans-serif;
+    font-weight: 200;
+    color: #F3F3F3;
+    margin: 0;
+}
+
+.tiny-SEO-element, .tiny-SEO-element > .seo-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1px; /*could be 0*/
+    color: #1A1B1F;
+    cursor: default;
+}
+
+.seo-link, .seo-link:link, .seo-link:visited {
+    text-decoration: none;
+    cursor: text;
+}
+
+.blue-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 9vw;
+    height: 2.75vw;
+    border: 1px solid #33D2D2;
+    -webkit-box-shadow: 0.3vw 0.3vw 0 #33D2D2;
+    box-shadow: 0.3vw 0.3vw 0 #33D2D2;
+    border-radius: 100vw;
+    cursor: pointer;
+}
+
+.highlighted-label {
+    color: #FFFFFF;
+}
+
+.error {
+    color: #cc0000;
+}
+
+.blue-button:hover {
+    background-color: #F3F3F3;
+}
+
+#applyRightNowButton:hover {
+    background-color: #33D2D2;
+}
+
+.blue-button-text {
+    color: #33D2D2;
+    font-size: 1.4vw;
+    font-weight: 400;
+}
+
+.header-text {
+    font-size: 3.75vw;
+    font-weight: 100;
+    line-height: 4.75vw;
+}
+
+.header-text > strong {
+    font-weight: 400;
+}
+
+.line {
+    background-color: #F3F3F3;
+    width: 100%;
+    height: 1px;
+}
+
+#contentHolder {
+    margin-top: 2.5vw;
+    width: 90vw;
+}
+
+header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#buttonsHolder {
+    width: 21vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+#yndLogo {
+    width: 5.5vw;
+}
+
+#twitterLogo {
+    margin-right: 0.2vw;
+    width: 1.25vw;
+    height: 1.5vw;
+}
+
+#assignmentImageHolder {
+    margin-top: 5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+#assignmentHolder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+#webDeveloperHeader {
+    margin-top: 2vw;
+}
+
+#quickTaskText {
+    width: 35vw;
+    font-size: 2vw;
+    margin-top: 1vw;
+    margin-bottom: 3vw;
+}
+
+#imagesHolder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-shadow: 0.4vw 0.4vw 0 #F3F3F3;
+    box-shadow: 0.4vw 0.4vw 0 #F3F3F3;
+}
+
+.image-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.image-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 16vw;
+    height: 16vw;
+    border: 0.5px solid #F3F3F3;
+}
+
+.image-holder > img {
+    width: 12vw;
+}
+
+#firstImg, #thirdImg {
+    border-right: 0;
+}
+
+#thirdImg, #forthImg {
+    border-top: 0;
+}
+
+#blindBoyImg {
+    width: 16.25vw;
+    position: relative;
+    z-index: 1;
+    top: 1.55vw;
+    right: 0.5vw;
+}
+
+#deathImg {
+    width: 13.5vw;
+    position: absolute;
+    right: 6vw;
+    padding-bottom: 2.25vw;
+}
+
+#whatDoesPumpkinHolder {
+    margin-top: 7vw;
+    margin-bottom: 6vw;
+}
+
+#doesPumpkin {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+#whatDoesHeader {
+    margin-top: 0.75vw;
+    font-size: 2.25vw;
+    font-weight: 300;
+}
+
+#outOfTheBoxHolder {
+    margin-top: 7vw;
+}
+
+.blue-header {
+    color: #33D2D2;
+    font-weight: 800;
+    font-size: 0.65vw;
+}
+
+.list-holder {
+    margin-top: 1.75vw;
+}
+
+.list-item-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 2.25vw;
+}
+
+.list-item-holder > img {
+    margin-top: 0.2vw;
+    width: 1.5vw;
+    height: 1.5vw;
+    margin-left: 1.2vw;
+    margin-right: 2.5vw;
+}
+
+.list-text {
+    width: 30vw;
+    font-size: 1.4vw;
+    font-weight: 200;
+}
+
+#someHackingHolder {
+    margin-top: 2.5vw;
+}
+
+.list-holder > .list-item-holder:first-child {
+    margin-top: 0;
+}
+
+#bigCloudHolder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+#cloudText {
+    font-family: PseudoJaakko, sans-serif;
+    position: absolute;
+    z-index: 2;
+    -webkit-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    text-align: center;
+    font-size: 2.7vw;
+    width: 17vw;
+    line-height: 2.6vw;
+    padding-top: 6vw;
+    margin-left: -3.8vw;
+}
+
+#cloudImg {
+    width: 22.5vw;
+}
+
+#whiteCloudImg {
+    width: 22vw;
+    height: 19.8vw;
+    bottom: 0.3vw;
+}
+
+#superSeoElementHiddenBehindCloud {
+    position: absolute;
+    z-index: 0;
+    font-size: 8px;
+    margin-top: 8vw;
+    padding-right: 1.5vw;
+}
+
+#whiteCloudImg, #smallWhiteCloudImg {
+    position: relative;
+    z-index: 0;
+}
+
+#cloudImg, #smallCloudImg {
+    position: absolute;
+    z-index: 1;
+}
+
+#smallCloudImg, #smallWhiteCloudImg {
+    width: 5vw;
+}
+
+#smallCloudHolder {
+    margin-top: -6vw;
+    margin-left: 6.5vw;
+}
+
+#smallWhiteCloudImg {
+    top: 0.25vw;
+    left: 0.25vw;
+}
+
+#pumpkinHolder {
+    margin-top: -0.75vw;
+    width: 33vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+#pumpkinImg {
+    width: 13vw;
+}
+
+#suspiciousTextHolder {
+    width: 11vw;
+}
+
+.suspicious-text {
+    font-size: 1vw;
+    font-weight: 200;
+    color: #9B9C9D;
+}
+
+.suspicious-text:last-child {
+    margin-top: 1.5vw;
+}
+
+#applyRightNowButton {
+    margin-top: 9vw;
+    height: 3.25vw;
+    width: 100%;
+}
+
+#applyRightNowButton > .blue-button-text {
+    font-size: 1.6vw;
+}
+
+/* ----------form------------ */
+
+.form-holder {
+    margin-top: 1.2vw;
+    width: 50vw;
+}
+
+.form-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.form-logo {
+    width: 4.4vw;
+}
+
+.cross-img {
+    width: 1.4vw;
+    cursor: pointer;
+}
+
+.content-holder {
+    margin-top: 6vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.form-header-text {
+    font-weight: 400;
+    font-size: 3.35vw;
+}
+
+.form-text, .form-text > a {
+    margin-top: -0.6vw;
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+
+#formInputHolder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 400;
+    margin-top: 2.8vw;
+    font-size: 0.9vw;
+    color: #A3A3A3;
+}
+
+input {
+    margin-top: 0.3vw;
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #3F4145;
+    font-size: 2.2vw;
+    font-weight: 400;
+    height: 2.75vw;
+    padding: 0;
+}
+
+input:focus {
+    border-bottom-color: #33D2D2;
+}
+
+#tipsHolder {
+    margin-top: 0.6vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.tips-text {
+    font-weight: 400;
+    color: #808080;
+    font-size: 0.85vw;
+    margin-left: 1vw;
+}
+
+.tips-text:first-child {
+    margin-left: 0;
+}
+
+#submitButtonHolder {
+    margin-top: 2.5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.form-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #FFFFFF;
+    width: 8.5vw;
+    height: 2.7vw;
+    padding: 0 0.8vw;
+    cursor: pointer;
+    font-size: 1vw;
+}
+
+.form-button-text {
+    font-weight: 300;
+}
+
+#submitButton:hover {
+    background: #33D2D2;
+}
+
+#submitButton > p {
+    color: #1A1B1F;
+}
+
+.arrow-img {
+    width: 1.1vw;
+}
+
+/* ----------thanks------------ */
+
+#returnButton {
+    margin-top: 5vw;
+    background: none;
+    border: 1px solid #3F4145;
+}
+
+#returnButton > p {
+    color: #FFFFFF;
+}
+
+#returnButton:hover {
+    background: #33D2D2;
+}
+
+@media screen and (max-width: 1024px) {
+    #contentHolder {
+        margin-top: 4vw;
+        width: 93vw;
+    }
+
+    #yndLogo {
+        width: 6.5vw;
+    }
+
+    #buttonsHolder {
+        width: 30vw;
+    }
+
+    .blue-button {
+        width: 13vw;
+        height: 4vw;
+        -webkit-box-shadow: 0.5vw 0.5vw 0 #33D2D2;
+        box-shadow: 0.5vw 0.5vw 0 #33D2D2;
+    }
+
+    .blue-button-text {
+        font-size: 1.9vw;
+    }
+
+    #twitterLogo {
+        margin-right: 0.4vw;
+        width: 2vw;
+        height: 3vw;
+    }
+
+    #webDeveloperHeader {
+        margin-top: 2.5vw;
+    }
+
+    .header-text {
+        font-size: 5vw;
+        font-weight: 100;
+        line-height: 6vw;
+    }
+
+    #quickTaskText {
+        width: 44vw;
+        font-size: 2.5vw;
+        margin-bottom: 2vw;
+    }
+
+    #imagesHolder {
+        -webkit-box-shadow: 0.65vw 0.65vw 0 #F3F3F3;
+        box-shadow: 0.65vw 0.65vw 0 #F3F3F3;
+    }
+
+    .image-holder {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .image-holder > img {
+        width: 14vw;
+    }
+
+    #blindBoyImg {
+        width: 19.5vw;
+        top: 2vw;
+    }
+    #deathImg {
+        width: 17.5vw;
+        right: 5.9vw;
+        padding-bottom: 2.1vw;
+    }
+
+    #whatDoesPumpkinHolder {
+        margin-top: 8vw;
+    }
+
+    #whatDoesHeader {
+        margin-top: 0.9vw;
+        font-size: 3.5vw;
+    }
+
+    .blue-header {
+        font-size: 0.9vw;
+    }
+
+    #outOfTheBoxHolder {
+        margin-top: 10vw;
+    }
+
+    .list-holder {
+        margin-top: 2.75vw;
+    }
+
+    .list-text {
+        width: 41vw;
+        font-size: 1.9vw;
+    }
+
+    .list-item-holder {
+        margin-top: 3.75vw;
+    }
+
+    .list-item-holder > img {
+        margin-top: 0;
+        width: 2.6vw;
+        height: 2.6vw;
+        margin-left: 1.55vw;
+        margin-right: 3.25vw;
+    }
+
+    #someHackingHolder {
+        margin-top: 4vw;
+    }
+
+    #pumpkinContent {
+        margin-top: 1vw;
+    }
+
+    #cloudImg {
+        width: 28vw;
+    }
+
+    #cloudText {
+        font-size: 3.4vw;
+        width: 21vw;
+        line-height: 3.5vw;
+        padding-top: 7vw;
+        margin-left: -4.5vw;
+    }
+
+    #whiteCloudImg {
+        width: 27vw;
+        height: 23.75vw;
+        bottom: 0;
+    }
+
+    #smallCloudHolder {
+        margin-top: -2.5vw;
+        margin-left: 10vw;
+    }
+
+    #smallCloudImg, #smallWhiteCloudImg {
+        width: 6.5vw;
+    }
+
+    #pumpkinHolder {
+        margin-top: 0;
+        width: 41vw;
+    }
+
+    #pumpkinImg {
+        width: 18.5vw;
+    }
+
+    #suspiciousTextHolder {
+        width: 16vw;
+    }
+    .suspicious-text {
+        font-size: 1.4vw;
+    }
+
+    #applyRightNowButton {
+        margin-top: 11vw;
+        height: 5.25vw;
+    }
+
+    #applyRightNowButton > .blue-button-text {
+        font-size: 2.75vw;
+    }
+
+    /*-------form--------*/
+    .form-holder {
+        margin-top: 2vw;
+        margin-bottom: 6vw;
+        width: 70vw;
+    }
+    .form-logo {
+        width: 6vw;
+    }
+    .cross-img {
+        width: 2vw;
+    }
+
+    .content-holder {
+        margin-top: 8vw;
+    }
+
+    .form-header-text {
+        font-size: 4.4vw;
+    }
+    .form-text, .form-text > a {
+        margin-top: -0.7vw;
+        font-size: 1.5vw;
+    }
+    label {
+        margin-top: 4.6vw;
+        font-size: 1.3vw;
+    }
+    input {
+        margin-top: 0.8vw;
+        font-size: 3.6vw;
+        height: 4.35vw;
+    }
+
+    #tipsHolder {
+        margin-top: 1vw;
+    }
+    .tips-text {
+        font-size: 1.2vw;
+        margin-left: 1.2vw;
+    }
+
+    #submitButtonHolder {
+        margin-top: 4vw;
+    }
+    .form-button {
+        font-size: 1.6vw;
+        width: 13vw;
+        height: 4.3vw;
+        padding: 0 1.4vw;
+    }
+    .arrow-img {
+        width: 1.9vw;
+    }
+
+    /*-------thanks--------*/
+    #returnButton {
+        margin-top: 8vw;
+    }
+    #thanksHolder > .content-holder {
+        margin-top: 46vw;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #contentHolder {
+        margin-top: 6vw;
+        width: 90vw;
+    }
+    #yndLogo {
+        width: 16vw;
+    }
+    #buttonsHolder {
+        width: 58vw;
+    }
+    .blue-button {
+        width: 26vw;
+        height: 8.5vw;
+        -webkit-box-shadow: 0.7vw 0.7vw 0 #33D2D2;
+        box-shadow: 0.7vw 0.7vw 0 #33D2D2;
+    }
+    .blue-button-text {
+        font-size: 4.25vw;
+    }
+    #twitterLogo {
+        margin-right: 0.8vw;
+        width: 4.2vw;
+        height: 4.2vw;
+    }
+
+    #assignmentImageHolder {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    #assignmentHolder {
+        width: 100%;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    #assignmentHolder > article {
+        width: 100%;
+    }
+    #briefHolder {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    #webDeveloperHeader {
+        font-size: 8vw;
+        line-height: 10vw;
+        text-align: center;
+        margin-top: 4vw;
+        margin-bottom: 8vw;
+    }
+    #webDevLine {
+        display: none;
+    }
+    #quickTaskText {
+        width: 79vw;
+        font-size: 4.6vw;
+        margin-top: 8vw;
+        margin-bottom: 0;
+    }
+
+    #imagesHolder {
+        margin-top: 5vw;
+        -webkit-box-shadow: 1.2vw 1.2vw 0 #F3F3F3;
+        box-shadow: 1.2vw 1.2vw 0 #F3F3F3;
+    }
+    .image-holder {
+        width: 40vw;
+        height: 40vw;
+    }
+    .image-holder > img {
+        width: 30vw;
+    }
+    #blindBoyImg {
+        width: 40vw;
+        top: 4vw;
+        right: 1.5vw;
+    }
+    #deathImg {
+        width: 36vw;
+        right: unset;
+        padding-bottom: 4vw;
+    }
+
+    #whatDoesPumpkinHolder {
+        margin-top: 10vw;
+        margin-bottom: 10vw;
+    }
+    #whatDoesHolder, #pumpkinContent {
+        width: 100%;
+    }
+    #whatDoesHeader {
+        text-align: center;
+        margin-top: 6vw;
+        font-size: 6.5vw;
+    }
+    #doesPumpkin {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    #outOfTheBoxHolder {
+        margin-top: 5vw;
+    }
+    .blue-header {
+        font-size: 2.4vw;
+    }
+    .list-holder {
+        margin-top: 5vw;
+    }
+    .list-item-holder {
+        margin-top: 6.5vw;
+    }
+    .list-text {
+        width: 100%;
+        font-size: 3.9vw;
+    }
+    .list-item-holder > img {
+        margin-top: 0;
+        width: 5.5vw;
+        height: 5.5vw;
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+    #someHackingHolder {
+        margin-top: 7vw;
+    }
+
+    #pumpkinContent {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    #bigCloudHolder {
+        margin-left: 20vw;
+    }
+    #cloudImg {
+        width: 63vw;
+    }
+    #whiteCloudImg {
+        width: 62vw;
+        height: 53.75vw;
+    }
+    #cloudText {
+        font-size: 7.4vw;
+        width: 46vw;
+        line-height: 7.5vw;
+        padding-top: 15.5vw;
+        margin-left: -11vw;
+    }
+    #smallCloudImg {
+        width: 12.5vw;
+    }
+    #smallWhiteCloudImg {
+        width: 13vw;
+    }
+    #smallCloudHolder {
+        margin-top: -5.5vw;
+        margin-left: 19vw;
+    }
+    #superSeoElementHiddenBehindCloud {
+        margin-top: 20vw;
+        padding-right: 6.5vw;
+    }
+    #pumpkinHolder {
+        margin-top: -2vw;
+        width: 100%;
+    }
+    #pumpkinImg {
+        width: 43vw;
+    }
+
+    #suspiciousTextHolder {
+        width: 43vw;
+        margin-bottom: 12vw;
+    }
+    .suspicious-text {
+        font-size: 3.8vw;
+    }
+
+    #applyRightNowButton {
+        margin-top: 6vw;
+        height: 12vw;
+        width: 90%;
+    }
+    #applyRightNowButton > .blue-button-text {
+        font-size: 5.25vw;
+    }
+
+    /*-------form--------*/
+    .form-holder {
+        margin-top: 6vw;
+        margin-bottom: 8vw;
+        width: 92vw;
+    }
+    .form-logo {
+        width: 12vw;
+    }
+    .cross-img {
+        width: 4.25vw;
+    }
+
+    .content-holder {
+        margin-top: 10vw;
+    }
+    .form-header-text {
+        font-size: 8vw;
+    }
+    .form-text, .form-text > a {
+        font-size: 3vw;
+    }
+    label {
+        margin-top: 12vw;
+        font-size: 2.8vw;
+    }
+    input {
+        margin-top: 2.2vw;
+        font-size: 7.5vw;
+        height: 9.5vw;
+    }
+
+    #tipsHolder {
+        margin-top: 2.5vw;
+    }
+    .tips-text {
+        font-size: 2.9vw;
+        margin-left: 2vw;
+    }
+
+    #submitButtonHolder {
+        margin-top: 8vw;
+    }
+    .form-button {
+        font-size: 3.8vw;
+        width: 32vw;
+        height: 10.3vw;
+        padding: 0 3.5vw;
+    }
+    .arrow-img {
+        width: 4.4vw;
+    }
+
+    /*-------thanks--------*/
+    #thanksHolder > .content-holder {
+        margin-top: 40vw;
+    }
+    #returnButton {
+        margin-top: 16vw;
+    }
+}
